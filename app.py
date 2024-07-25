@@ -59,7 +59,7 @@ def create_app():
                 )
                 new_position.insert()
 
-                flash('Position succesfully added!', 'success')
+                flash('Position successfully added!', 'success')
             elif invoice_form.validate_on_submit():
                 form_invoice_details = invoice_form.data
                 form_invoice_details.pop('csrf_token', None)
